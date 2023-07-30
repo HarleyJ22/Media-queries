@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 20px;
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+  }
+  
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+  }
+  .image {
+    width: 220px;
+    height: 280px;
+  }
+  
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border-radius: 20px;
+    border: 5px solid rgb(103, 68, 16);
+    background-color: rgb(201, 157, 83);
+    padding: 20px;
+    height: 550px;
+    text-align: center;
+  }
+  
+  .card2 {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border-radius: 20px;
+    border: 5px solid rgb(180, 88, 63);
+    background-color: rgb(231, 148, 148);
+    padding: 20px;
+    height: 550px;
+    text-align: center;
+  }
+  
+  .card3 {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border-radius: 20px;
+    border: 5px solid rgb(230, 86, 42);
+    background-color: rgb(240, 150, 94);
+    padding: 20px;
+    height: 550px;
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+  @media (max-width: 375px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 20px;
+    }
+  }
